@@ -45,3 +45,38 @@ Instale a biblioteca **PubSubClient**:
    ```cpp
    const char* ssid = "Wokiwi-GUEST";
    const char* password = "";
+
+
+## 📚 **Como Usar**
+
+### **Monitoramento de Consumo**
+- O consumo energético é monitorado pelo sensor LDR e os valores são enviados para o tópico MQTT:
+  - **Tópico**: `verdiHome/consumo`
+  - **Descrição**: Publica os dados do consumo energético em tempo real.
+
+### **Alertas de Consumo Elevado**
+- Quando o consumo ultrapassa o limite configurado no código (valor padrão: `800`), um alerta é enviado para o seguinte tópico MQTT:
+  - **Tópico**: `verdiHome/alerta`
+  - **Descrição**: Envia uma mensagem notificando o consumo elevado.
+
+### **Controle de Dispositivos**
+- Comandos MQTT podem ser enviados para controlar dispositivos (simulado por um LED no projeto):
+  - **Tópico**: `verdiHome/comando`
+  - **Mensagens**:
+    - `"ligar"`: Liga o LED.
+    - `"desligar"`: Desliga o LED.
+
+---
+
+## 📡 **Tópicos MQTT**
+
+### **Publicações**
+1. **Tópico**: `verdiHome/consumo`  
+   **Descrição**: Publica os dados do consumo energético.
+2. **Tópico**: `verdiHome/alerta`  
+   **Descrição**: Notifica quando o consumo ultrapassa o limite configurado.
+
+### **Assinaturas**
+1. **Tópico**: `verdiHome/comando`  
+   **Descrição**: Recebe comandos para ligar ou desligar dispositivos (LED no exemplo).
+
