@@ -75,14 +75,12 @@ Instale a biblioteca **PubSubClient**:
    **Descrição**: Publica os dados do consumo energético.
 2. **Tópico**: `verdiHome/alerta`  
    **Descrição**: Notifica quando o consumo ultrapassa o limite configurado.
-
-
-Informações dos Alunos
-Fabricio Bettarello Heluani - RM 554638
-Thamiris Almeida Soares da Silva - RM 559155
-Eric Yuji Ito - RM 554869
-
 ### **Assinaturas**
 1. **Tópico**: `verdiHome/comando`  
    **Descrição**: Recebe comandos para ligar ou desligar dispositivos (LED no exemplo).
 
+
+### Informações dos Alunos
+Fabricio Bettarello Heluani - RM 554638
+Thamiris Almeida Soares da Silva - RM 559155
+Eric Yuji Ito - RM 554869
